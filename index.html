@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Codex — Agence de développement web et mobile" />
+  <title>Codex — Développement Web & Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="logo.svg" alt="Logo Codex" class="logo" />
+        <span class="brand-name">Codex</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Nous construisons des expériences digitales élégantes</h1>
+        <p class="lead">Codex conçoit des applications web et mobiles performantes et sur-mesure.</p>
+        <p>
+          <a class="btn primary" href="#contact">Demander une démo</a>
+          <a class="btn ghost" href="#portfolio">Voir le portfolio</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Nos services</h2>
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>Développement Web</h3>
+            <p>Sites vitrines, applications single-page, e-commerce et APIs robustes.</p>
+          </article>
+          <article class="card">
+            <h3>Développement Mobile</h3>
+            <p>Applications natives et cross-platform (iOS, Android, React Native/Flutter).</p>
+          </article>
+          <article class="card">
+            <h3>Design & UX</h3>
+            <p>Conception UI, prototypage et tests utilisateur pour interfaces intuitives.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid portfolio-grid">
+          <figure class="project">
+            <img src="https://via.placeholder.com/400x240?text=Projet+1" alt="Projet 1" />
+            <figcaption>Application e-commerce moderne</figcaption>
+          </figure>
+          <figure class="project">
+            <img src="https://via.placeholder.com/400x240?text=Projet+2" alt="Projet 2" />
+            <figcaption>Plateforme de réservation mobile</figcaption>
+          </figure>
+          <figure class="project">
+            <img src="https://via.placeholder.com/400x240?text=Projet+3" alt="Projet 3" />
+            <figcaption>Dashboard analytique sur-mesure</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>À propos de Codex</h2>
+        <p>Codex est une startup spécialisée dans le développement d'expériences digitales pour startups et PME. Nous combinons agilité, design et excellence technique.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-row">
+            <button class="btn primary" type="submit">Envoyer</button>
+          </div>
+          <p id="formResponse" class="form-response" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Codex — Développement Web & Mobile</p>
+      <p class="small">Basée localement. Disponible pour missions courtes et long terme.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
